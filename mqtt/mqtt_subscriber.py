@@ -6,14 +6,12 @@ import paho.mqtt.client as mqtt
 
 parser = argparse.ArgumentParser(description='Create MQTT subscriber')
 parser.add_argument('server')
-parser.add_argument('experiment_length', type=int)
 parser.add_argument('--keep-alive', default=60)
 parser.add_argument('--qos', default=0, type=int)
 
 args = parser.parse_args()
 
 server = args.server
-experiment_length = args.experiment_length
 keep_alive = args.keep_alive
 qos = args.qos
 
@@ -30,6 +28,4 @@ client.on_message = on_message
 client.connect(server, 1883, keep_alive)
 client.subscribe('test', qos)
 
-client.loop_start()
-time.sleep(experiment_length)
-client.loop_stop()
+client.loop_forever()

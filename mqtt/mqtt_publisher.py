@@ -8,7 +8,6 @@ parser = argparse.ArgumentParser(description='Create MQTT publisher')
 parser.add_argument('server')
 parser.add_argument('payload_file', type=argparse.FileType('r'))
 parser.add_argument('send_interval', type=int)
-parser.add_argument('experiment_length', type=int)
 parser.add_argument('--keep-alive', default=60, type=int)
 parser.add_argument('--qos', default=0, type=int)
 
@@ -17,7 +16,6 @@ args = parser.parse_args()
 server = args.server
 data = json.load(args.payload_file)
 send_interval = args.send_interval
-stop_time = time.time() + args.experiment_length
 keep_alive = args.keep_alive
 qos = args.qos
 
@@ -38,9 +36,10 @@ client.on_publish = on_publish
 client.on_disconnect = on_disconnect
 
 client.connect(server, 1883, keep_alive)
+
 client.loop_start()
 
-while time.time() < stop_time:
+while True:
     client.publish('test', payload=json.dumps(data), qos=qos)
     time.sleep(send_interval)
 
