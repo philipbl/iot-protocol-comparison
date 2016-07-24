@@ -1,3 +1,8 @@
 {
-    "test": "here is data"
+    "temp": 26.67,
+    "humidity": 50.3,
+    "small": 1542,
+    "large": 139,
+    "sequence": 1000,
+    "timestamp": "2016-08-23T18:25:43.321Z"
 }
