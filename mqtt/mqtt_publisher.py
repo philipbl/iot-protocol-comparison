@@ -24,8 +24,6 @@ def on_connect(client, userdata, flags, rc):
 
 def on_disconnect(client, userdata, rc):
     print("Disconnected from broker")
-    print("Connecting again")
-    client.connect(server, 1883, keep_alive)
 
 def on_publish(client, userdata, mid):
     print("Published {}".format(mid))
@@ -40,7 +38,9 @@ client.connect(server, 1883, keep_alive)
 client.loop_start()
 
 while True:
-    client.publish('test', payload=json.dumps(data), qos=qos)
+    result = client.publish('test', payload=json.dumps(data), qos=qos)
+    print("Published with result: {}".format(result))
+
     time.sleep(send_interval)
 
 client.loop_stop()

@@ -17,6 +17,7 @@ qos = args.qos
 
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code {}".format(rc))
+    client.subscribe('test', qos)
 
 def on_message(client, userdata, message):
     print("Received message: {}".format(message.payload))
@@ -26,6 +27,5 @@ client.on_connect = on_connect
 client.on_message = on_message
 
 client.connect(server, 1883, keep_alive)
-client.subscribe('test', qos)
 
 client.loop_forever()
