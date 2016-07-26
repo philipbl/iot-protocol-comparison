@@ -21,12 +21,10 @@ case "$whichnode" in
     "gateway")
         echo "##### Performing gateway setup"
         # Install mosquitto
-        sudo apt-get install software-properties-common
-        sudo apt-get install python3-software-properties
-        sudo apt-get install python-software-properties
-        sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+        sudo apt-get install -y software-properties-common python3-software-properties python-software-properties
+        sudo apt-add-repository -y ppa:mosquitto-dev/mosquitto-ppa
         sudo apt-get update
-        sudo apt-get -y install mosquitto
+        sudo apt-get install -y mosquitto
     ;;
     *)
         echo "ERROR: Host $whichnode unrecognized!";
