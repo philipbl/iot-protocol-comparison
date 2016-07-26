@@ -1,0 +1,34 @@
+#!/bin/bash
+
+echo "##### Performing common setup"
+sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils
+sudo apt-get install -y vim tmux tshark
+
+pyenv install -s 3.5.2
+export PYENV_VERSION=3.5.2
+
+pip3 install paho-mqtt requests flask aiocoap
+
+echo "##### Performing specific setup"
+whichnode=`hostname -s`
+
+case "$whichnode" in
+    "sensor")
+        echo "##### Performing sensor setup"
+    ;;
+    "gateway")
+        echo "##### Performing gateway setup"
+        # Install mosquitto
+        sudo apt-get install software-properties-common
+        sudo apt-get install python3-software-properties
+        sudo apt-get install python-software-properties
+        sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+        sudo apt-get update
+        sudo apt-get -y install mosquitto
+    ;;
+    *)
+        echo "ERROR: Host $whichnode unrecognized!";
+        exit 1;
+esac
