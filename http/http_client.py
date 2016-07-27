@@ -15,7 +15,11 @@ server = args.server
 data = json.load(args.payload_file)
 send_interval = args.send_interval
 
+s = requests.Session()
+
 while True:
     print("Sending message")
-    requests.post("http://{}:5000/test".format(server), json=data)
+    r = s.post("http://{}:5000/test".format(server), json=data)
+    print("Response: {}".format(r.text))
+
     time.sleep(send_interval)
