@@ -12,12 +12,12 @@
 - MQTT (QoS 2)
 
 ## Configuration
-One message is sent every 60 seconds. The message contains a payload of 121 bytes (`data.json` without newlines). For MQTT, the keep alive time is 60 seconds.
+One message is sent every 60 seconds. The message contains a payload of 121 bytes (`data.json` file without newlines). For MQTT, the keep alive time is 60 seconds.
 
 ## Metrics to measure
-- Success rate (number of packets received vs sent)
-- Number of packets sent
-- Cumulative bytes
+- Success rate (number of messages received vs sent)
+- Number of packets transmitted
+- Cumulative bytes transmitted
 
 ## Topology
 
@@ -42,9 +42,7 @@ One message is sent every 60 seconds. The message contains a payload of 121 byte
 | CoAP         |            11 |                11 |            22 |             2585 |
 | HTTP         |            11 |                11 |           132 |            14124 |
 | MQTT (QoS 0) |            11 |                11 |            65 |             5793 |
-| MQTT (QoS 2) |            11 |                11 |           77† |             6730 |
-
-† MQTT QoS 2 uses the PING messages to piggyback TCP ACKS.
+| MQTT (QoS 2) |            11 |                11 |            77 |             6730 |
 
 
 ## 10 Minutes, 30% Loss
