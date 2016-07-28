@@ -9,7 +9,7 @@ set gateway [$ns node]
 set lan0 [$ns make-lan "$sensor $gateway" 1Mb 10ms]
 
 # Add loss to network
-tb-set-lan-loss $lan1 0.3
+tb-set-lan-loss $lan0 0.3
 
 $ns rtproto Static
 $ns run
