@@ -12,6 +12,7 @@ def on_connect(client, userdata, flags, rc):
 
 
 def on_message(client, userdata, message):
+    global total
     total += 1
     print("Received message ({})".format(total))
 
