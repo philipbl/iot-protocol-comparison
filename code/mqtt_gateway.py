@@ -4,6 +4,7 @@ import time
 
 import paho.mqtt.client as mqtt
 
+total = 0
 
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code {}".format(rc))
@@ -11,7 +12,8 @@ def on_connect(client, userdata, flags, rc):
 
 
 def on_message(client, userdata, message):
-    print("Received message: {}".format(message.payload))
+    total += 1
+    print("Received message ({})".format(total))
 
 
 if __name__ == "__main__":

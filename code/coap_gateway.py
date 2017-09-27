@@ -8,6 +8,7 @@ from aiocoap import *
 
 async def main(server, update_time, request_interval, requesting):
     protocol = await Context.create_client_context()
+    total = 0
     acking = 0
 
     while True:
@@ -28,7 +29,8 @@ async def main(server, update_time, request_interval, requesting):
         try:
             data = json.loads(response.payload.decode())
             acking = len(data)
-            print("Received: {}".format(acking))
+            total += acking
+            print("Received: {} ({})".format(acking, total))
         except Exception as e:
             print(e)
             acking = 0

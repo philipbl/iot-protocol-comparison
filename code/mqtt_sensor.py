@@ -42,7 +42,7 @@ if __name__ == "__main__":
         data = queue.peek(blocking=True)
 
         # Convert all byte strings to strings
-        print("Publishing: {}".format(data))
+        print("Publishing data")
 
         info = client.publish('devices/sensor001/data',
                               payload=json.dumps(data),
