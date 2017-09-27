@@ -18,6 +18,7 @@ async def main(server, update_time, request_interval, requesting):
 
         try:
             print("Sending request for data...")
+            print(request)
             response = await protocol.request(request).response
         except Exception as e:
             print('Failed to fetch resource')
