@@ -27,6 +27,7 @@ class DataResource(aiocoap.resource.Resource):
         self.queue = queue
 
     async def render_get(self, request):
+        print(request)
         acking, requesting, = struct.unpack('!HH', request.payload)
         print("Received request: ACK {} REQUEST {}".format(acking, requesting))
 

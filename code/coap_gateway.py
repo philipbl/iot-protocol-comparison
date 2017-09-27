@@ -20,8 +20,9 @@ async def main(server, update_time, request_interval, requesting):
             print("Sending request for data...")
             response = await protocol.request(request).response
         except Exception as e:
-            print('Failed to fetch resource:')
+            print('Failed to fetch resource')
             print(e)
+            print("Waiting...")
             acking = 0
             await asyncio.sleep(update_time)
             continue
@@ -33,6 +34,7 @@ async def main(server, update_time, request_interval, requesting):
             print("Received: {} ({})".format(acking, total))
         except Exception as e:
             print(e)
+            print("Waiting...")
             acking = 0
             await asyncio.sleep(update_time)
             continue
