@@ -9,7 +9,7 @@ sudo apt-get install -y vim tmux tshark
 pyenv install -s 3.5.2
 export PYENV_VERSION=3.5.2
 
-pip3 install paho-mqtt requests flask aiocoap
+pip3 install paho-mqtt aiocoap python_persistent_queue
 
 echo "##### Performing specific setup"
 whichnode=`hostname -s`
@@ -24,7 +24,7 @@ case "$whichnode" in
         sudo apt-get install -y software-properties-common python3-software-properties python-software-properties
         sudo apt-add-repository -y ppa:mosquitto-dev/mosquitto-ppa
         sudo apt-get update
-        sudo apt-get install -y mosquitto
+        sudo apt-get install -y mosquitto mosquitto-utils
     ;;
     *)
         echo "ERROR: Host $whichnode unrecognized!";
