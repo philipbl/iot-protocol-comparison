@@ -10,9 +10,11 @@ import aiocoap
 from persistent_queue import PersistentQueue
 
 
-async def start_sensors(queue, interval):
+async def start_sensors(queue, data_file, interval):
+    with open(data_file) as f:
+        data = json.load(f)
+
     while True:
-        data = {'small': 500, 'large': 123}
         queue.push(data)
         print("Generating new data... ({})".format(len(queue)))
 
@@ -39,6 +41,7 @@ class DataResource(aiocoap.resource.Resource):
 
 def main():
     parser = argparse.ArgumentParser(description='Create CoAP client')
+    parser.add_argument('data_file')
     parser.add_argument('-i', '--interval', type=int, default=2)
     args = parser.parse_args()
 
@@ -46,7 +49,7 @@ def main():
     queue = PersistentQueue('coap.queue')
 
     print("Starting producer")
-    producer = start_sensors(queue, args.interval)
+    producer = start_sensors(queue, args.data_file, args.interval)
 
     print("Starting server...")
     root = resource.Site()

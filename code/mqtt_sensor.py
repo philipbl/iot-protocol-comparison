@@ -7,9 +7,11 @@ import paho.mqtt.client as mqtt
 from persistent_queue import PersistentQueue
 
 
-def start_sensors(queue, interval):
+def start_sensors(queue, data_file, interval):
+    with open(data_file) as f:
+        data = json.load(f)
+
     while True:
-        data = {'small': 500, 'large': 123}
         queue.push(data)
         print("Generating new data... ({})".format(len(queue)))
 
@@ -19,6 +21,7 @@ def start_sensors(queue, interval):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Create MQTT publisher')
     parser.add_argument('broker')
+    parser.add_argument('data_file')
     parser.add_argument('-i', '--interval', type=int, default=2)
     args = parser.parse_args()
 
@@ -27,7 +30,7 @@ if __name__ == "__main__":
 
     print("Starting producer")
     producer = Thread(target=start_sensors,
-                      args=(queue, args.interval))
+                      args=(queue, args.data_file, args.interval))
     producer.start()
 
     print("Starting MQTT publisher...")
