@@ -49,7 +49,7 @@ parser.add_argument('experiment')
 parser.add_argument('protocol')
 parser.add_argument('device_type')
 parser.add_argument('data_file')
-parser.add_argument('-i', '--interval', default=60)
+parser.add_argument('-i', '--interval', default=60, type=int)
 args = parser.parse_args()
 
 
