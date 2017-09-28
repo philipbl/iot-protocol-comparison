@@ -3,7 +3,7 @@
 echo "##### Performing common setup"
 sudo apt-get update
 # sudo apt-get -y upgrade
-sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils curl
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils
 sudo apt-get install -y vim tmux tshark
 
 export PYENV_VERSION=3.5.2
@@ -13,12 +13,7 @@ echo "##### Performing specific setup"
 whichnode=`hostname -s`
 
 case "$whichnode" in
-    "sensormqtt")
-    "sensorcoap")
-        echo "##### Performing sensor setup"
-    ;;
     "gatewaymqtt")
-    "gatewaycoap")
         echo "##### Performing gateway setup"
         # Install mosquitto
         sudo apt-get install -y software-properties-common python3-software-properties python-software-properties
@@ -27,6 +22,5 @@ case "$whichnode" in
         sudo apt-get install -y mosquitto mosquitto-clients
     ;;
     *)
-        echo "ERROR: Host $whichnode unrecognized!";
-        exit 1;
+        echo "Nothing to do";
 esac

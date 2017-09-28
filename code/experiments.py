@@ -49,6 +49,7 @@ parser.add_argument('experiment')
 parser.add_argument('protocol')
 parser.add_argument('device_type')
 parser.add_argument('data_file')
+parser.add_argument('-i', '--interval', default=60)
 args = parser.parse_args()
 
 
@@ -59,14 +60,14 @@ if args.experiment == '2':
 
 if args.protocol == 'coap':
     if args.device_type == 'sensor':
-        coap_sensor.main('../data.json', 60)
+        coap_sensor.main('../data.json', args.interval)
     elif args.device_type == 'gateway':
-        coap_gateway.main('sensorcoap', 60, 8)
+        coap_gateway.main('sensorcoap', args.interval, 8)
     else:
         print("Unknown device type")
 elif args.protocol == 'mqtt':
     if args.device_type == 'sensor':
-        mqtt_sensor.main('gatewaymqtt', '../data.json', 60)
+        mqtt_sensor.main('gatewaymqtt', '../data.json', args.interval)
     elif args.device_type == 'gateway':
         mqtt_gateway.main('localhost')
     else:
