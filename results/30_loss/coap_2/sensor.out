@@ -1,0 +1,237 @@
+Loading queue...
+Starting producer
+Starting server...
+Generating new data... (1)
+<aiocoap.Message at 0x7f25a15a5240: Type.CON GET (ID 29446, token b'\x00\x00=\xc4') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 0 REQUEST 5
+Generating new data... (2)
+Generating new data... (3)
+Generating new data... (4)
+Generating new data... (5)
+Generating new data... (6)
+<aiocoap.Message at 0x7f25a15a5208: Type.CON GET (ID 29447, token b'\x00\x00=\xc5') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 1 REQUEST 5
+<aiocoap.Message at 0x7f25a15a5550: Type.CON GET (ID 29448, token b'\x00\x00=\xc6') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+Generating new data... (1)
+Generating new data... (2)
+Generating new data... (3)
+Generating new data... (4)
+Generating new data... (5)
+<aiocoap.Message at 0x7f25a15a5470: Type.CON GET (ID 29449, token b'\x00\x00=\xc7') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 0 REQUEST 5
+Generating new data... (6)
+<aiocoap.Message at 0x7f25a15a5780: Type.CON GET (ID 29450, token b'\x00\x00=\xc8') remote ('::Received request: ACK 5 REQUEST 5
+Generating new data... (2)
+Generating new data... (3)
+Generating new data... (4)
+Generating new data... (5)
+Generating new data... (6)
+Generating new data... (7)
+Generating new data... (8)
+<aiocoap.Message at 0x7f25a15a58d0: Type.CON GET (ID 29451, token b'\x00\x00=\xc9') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 1 REQUEST 5
+<aiocoap.Message at 0x7f25a15a5a20: Type.CON GET (ID 29452, token b'\x00\x00=\xca') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+Generating new data... (3)
+Generating new data... (4)
+Generating new data... (5)
+Generating new data... (6)
+Generating new data... (7)
+<aiocoap.Message at 0x7f25a15a5940: Type.CON GET (ID 29453, token b'\x00\x00=\xcb') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 2 REQUEST 5
+Generating new data... (6)
+<aiocoap.Message at 0x7f25a15a5b70: Type.CON GET (ID 29454, token b'\x00\x00=\xcc') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+Generating new data... (2)
+Generating new data... (3)
+Generating new data... (4)
+Generating new data... (5)
+Generating new data... (6)
+Generating new data... (7)
+Generating new data... (8)
+Generating new data... (9)
+Generating new data... (10)
+Generating new data... (11)
+Generating new data... (12)
+<aiocoap.Message at 0x7f25a15a5c50: Type.CON GET (ID 29455, token b'\x00\x00=\xcd') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 1 REQUEST 5
+<aiocoap.Message at 0x7f25a15a5eb8: Type.CON GET (ID 29456, token b'\x00\x00=\xce') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+Generating new data... (7)
+Generating new data... (8)
+Generating new data... (9)
+Generating new data... (10)
+Generating new data... (11)
+Generating new data... (12)
+Generating new data... (13)
+Generating new data... (14)
+Generating new data... (15)
+Generating new data... (16)
+Generating new data... (17)
+Generating new data... (18)
+Generating new data... (19)
+Generating new data... (20)
+Generating new data... (21)
+Generating new data... (22)
+Generating new data... (23)
+Generating new data... (24)
+Generating new data... (25)
+Generating new data... (26)
+Generating new data... (27)
+Generating new data... (28)
+Generating new data... (29)
+Generating new data... (30)
+Generating new data... (31)
+Generating new data... (32)
+Generating new data... (33)
+Generating new data... (34)
+Generating new data... (35)
+Generating new data... (36)
+Generating new data... (37)
+Generating new data... (38)
+Generating new data... (39)
+Generating new data... (40)
+Generating new data... (41)
+Generating new data... (42)
+Generating new data... (43)
+Generating new data... (44)
+Generating new data... (45)
+Generating new data... (46)
+Generating new data... (47)
+Generating new data... (48)
+Generating new data... (49)
+Generating new data... (50)
+Generating new data... (51)
+Generating new data... (52)
+Generating new data... (53)
+Generating new data... (54)
+Generating new data... (55)
+Generating new data... (56)
+Generating new data... (57)
+Generating new data... (58)
+<aiocoap.Message at 0x7f25a15a5f28: Type.CON GET (ID 29457, token b'\x00\x00=\xcf') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 0 REQUEST 5
+<aiocoap.Message at 0x7f25a15a5f28: Type.CON GET (ID 29458, token b'\x00\x00=\xd0') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+Generating new data... (54)
+Generating new data... (55)
+Generating new data... (56)
+Generating new data... (57)
+Generating new data... (58)
+Generating new data... (59)
+Generating new data... (60)
+Generating new data... (61)
+Generating new data... (62)
+Generating new data... (63)
+Generating new data... (64)
+Generating new data... (65)
+Generating new data... (66)
+Generating new data... (67)
+Generating new data... (68)
+Generating new data... (69)
+Generating new data... (70)
+<aiocoap.Message at 0x7f25a1615160: Type.CON GET (ID 29459, token b'\x00\x00=\xd1') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+Generating new data... (66)
+<aiocoap.Message at 0x7f25a15a5f28: Type.CON GET (ID 29460, token b'\x00\x00=\xd2') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+Generating new data... (62)
+<aiocoap.Message at 0x7f25a1615160: Type.CON GET (ID 29461, token b'\x00\x00=\xd3') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+Generating new data... (58)
+<aiocoap.Message at 0x7f25a15a5f28: Type.CON GET (ID 29462, token b'\x00\x00=\xd4') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+<aiocoap.Message at 0x7f25a15a5f28: Type.CON GET (ID 29463, token b'\x00\x00=\xd5') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+<aiocoap.Message at 0x7f25a15a5f28: Type.CON GET (ID 29464, token b'\x00\x00=\xd6') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+Generating new data... (44)
+Generating new data... (45)
+Generating new data... (46)
+Generating new data... (47)
+Generating new data... (48)
+Generating new data... (49)
+Generating new data... (50)
+Generating new data... (51)
+Generating new data... (52)
+Generating new data... (53)
+Generating new data... (54)
+Generating new data... (55)
+Generating new data... (56)
+Generating new data... (57)
+Generating new data... (58)
+Generating new data... (59)
+Generating new data... (60)
+Generating new data... (61)
+Generating new data... (62)
+Generating new data... (63)
+Generating new data... (64)
+Generating new data... (65)
+Generating new data... (66)
+Generating new data... (67)
+Generating new data... (68)
+Generating new data... (69)
+Generating new data... (70)
+Generating new data... (71)
+Generating new data... (72)
+Generating new data... (73)
+Generating new data... (74)
+Generating new data... (75)
+Generating new data... (76)
+Generating new data... (77)
+Generating new data... (78)
+Generating new data... (79)
+Generating new data... (80)
+Generating new data... (81)
+Generating new data... (82)
+Generating new data... (83)
+Generating new data... (84)
+Generating new data... (85)
+Generating new data... (86)
+Generating new data... (87)
+Generating new data... (88)
+Generating new data... (89)
+Generating new data... (90)
+Generating new data... (91)
+Generating new data... (92)
+Generating new data... (93)
+Generating new data... (94)
+<aiocoap.Message at 0x7f25a1615160: Type.CON GET (ID 29465, token b'\x00\x00=\xd7') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 0 REQUEST 5
+Generating new data... (95)
+<aiocoap.Message at 0x7f259e975e48: Type.CON GET (ID 29466, token b'\x00\x00=\xd8') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+<aiocoap.Message at 0x7f259e975e48: Type.CON GET (ID 29467, token b'\x00\x00=\xd9') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+Generating new data... (86)
+<aiocoap.Message at 0x7f25a1615160: Type.CON GET (ID 29468, token b'\x00\x00=\xda') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+<aiocoap.Message at 0x7f25a1615160: Type.CON GET (ID 29469, token b'\x00\x00=\xdb') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+Generating new data... (77)
+<aiocoap.Message at 0x7f259e975e48: Type.CON GET (ID 29470, token b'\x00\x00=\xdc') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+Generating new data... (73)
+<aiocoap.Message at 0x7f25a1615160: Type.CON GET (ID 29471, token b'\x00\x00=\xdd') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+<aiocoap.Message at 0x7f25a1615160: Type.CON GET (ID 29472, token b'\x00\x00=\xde') remote ('::ffff:10.1.1.3', 48609, 0, 0), 2 option(s), 4 byte(s) payload>
+Received request: ACK 5 REQUEST 5
+Generating new data... (64)
+Generating new data... (65)
+^CTraceback (most recent call last):
+  File "coap_sensor.py", line 66, in <module>
+    main()
+  File "coap_sensor.py", line 62, in main
+    asyncio.get_event_loop().run_until_complete(test)
+  File "/users/philipbl/.pyenv/versions/3.5.2/lib/python3.5/asyncio/base_events.py", line 375, in run_until_complete
+    self.run_forever()
+  File "/users/philipbl/.pyenv/versions/3.5.2/lib/python3.5/asyncio/base_events.py", line 345, in run_forever
+    self._run_once()
+  File "/users/philipbl/.pyenv/versions/3.5.2/lib/python3.5/asyncio/base_events.py", line 1276, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/users/philipbl/.pyenv/versions/3.5.2/lib/python3.5/selectors.py", line 441, in select
+    fd_event_list = self._epoll.poll(timeout, max_ev)
+KeyboardInterrupt
+Task was destroyed but it is pending!
+task: <Task pending coro=<start_sensors() done, defined at coap_sensor.py:13> wait_for=<Future pending cb=[Task._wakeup()]> cb=[_wait.<locals>._on_completion() at /users/philipbl/.pyenv/versions/3.5.2/lib/python3.5/asyncio/tasks.py:414]>

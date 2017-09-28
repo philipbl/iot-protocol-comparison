@@ -1,0 +1,225 @@
+Loading queue...
+Starting producer
+Starting MQTT publisher...
+Generating new data... (1)
+Generating new data... (2)
+Publishing data
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (2)
+Generating new data... (3)
+Generating new data... (4)
+Generating new data... (5)
+Generating new data... (6)
+Publishing data
+Generating new data... (6)
+Publishing data
+Publishing data
+Publishing data
+Generating new data... (4)
+Generating new data... (5)
+Publishing data
+Generating new data... (5)
+Generating new data... (6)
+Generating new data... (7)
+Generating new data... (8)
+Publishing data
+Publishing data
+Publishing data
+Generating new data... (6)
+Generating new data... (7)
+Publishing data
+Publishing data
+Generating new data... (6)
+Publishing data
+Publishing data
+Generating new data... (5)
+Publishing data
+Publishing data
+Publishing data
+Generating new data... (3)
+Publishing data
+Publishing data
+Generating new data... (2)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (2)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (2)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (2)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (2)
+Publishing data
+Generating new data... (2)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (2)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (2)
+Generating new data... (3)
+Generating new data... (4)
+Generating new data... (5)
+Generating new data... (6)
+Generating new data... (7)
+Generating new data... (8)
+Generating new data... (9)
+Generating new data... (10)
+Generating new data... (11)
+Generating new data... (12)
+Generating new data... (13)
+Generating new data... (14)
+Publishing data
+Publishing data
+Generating new data... (13)
+Publishing data
+Publishing data
+Publishing data
+Publishing data
+Publishing data
+Publishing data
+Publishing data
+Generating new data... (7)
+Publishing data
+Publishing data
+Generating new data... (6)
+Publishing data
+Publishing data
+Publishing data
+Publishing data
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (2)
+Generating new data... (3)
+Generating new data... (4)
+Generating new data... (5)
+Generating new data... (6)
+Publishing data
+Generating new data... (6)
+Publishing data
+Publishing data
+Publishing data
+Publishing data
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (1)
+Publishing data
+Generating new data... (2)
+Generating new data... (3)
+Generating new data... (4)
+^CTraceback (most recent call last):
+  File "mqtt_sensor.py", line 50, in <module>
+    info.wait_for_publish()
+  File "/users/philipbl/.pyenv/versions/3.5.2/lib/python3.5/site-packages/paho/mqtt/client.py", line 335, in wait_for_publish
+    self._condition.wait()
+  File "/users/philipbl/.pyenv/versions/3.5.2/lib/python3.5/threading.py", line 293, in wait
+    waiter.acquire()
+KeyboardInterrupt
+^CException ignored in: <module 'threading' from '/users/philipbl/.pyenv/versions/3.5.2/lib/python3.5/threading.py'>
+Traceback (most recent call last):
+  File "/users/philipbl/.pyenv/versions/3.5.2/lib/python3.5/threading.py", line 1288, in _shutdown
+    t.join()
+  File "/users/philipbl/.pyenv/versions/3.5.2/lib/python3.5/threading.py", line 1054, in join
+    self._wait_for_tstate_lock()
+  File "/users/philipbl/.pyenv/versions/3.5.2/lib/python3.5/threading.py", line 1070, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
