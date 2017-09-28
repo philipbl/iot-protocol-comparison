@@ -40,17 +40,12 @@ class DataResource(aiocoap.resource.Resource):
         return response
 
 
-def main():
-    parser = argparse.ArgumentParser(description='Create CoAP client')
-    parser.add_argument('data_file')
-    parser.add_argument('-i', '--interval', type=int, default=2)
-    args = parser.parse_args()
-
+def main(data_file, interval):
     print("Loading queue...")
     queue = PersistentQueue('coap.queue')
 
     print("Starting producer")
-    producer = start_sensors(queue, args.data_file, args.interval)
+    producer = start_sensors(queue, data_file, interval)
 
     print("Starting server...")
     root = resource.Site()
@@ -63,4 +58,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description='Create CoAP client')
+    parser.add_argument('data_file')
+    parser.add_argument('-i', '--interval', type=int, default=2)
+    args = parser.parse_args()
+
+    main(args.data_file, args.interval)

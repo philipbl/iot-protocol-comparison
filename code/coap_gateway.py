@@ -6,7 +6,7 @@ import struct
 from aiocoap import *
 
 
-async def main(server, update_time, requesting):
+async def start(server, update_time, requesting):
     protocol = await Context.create_client_context()
     total = 0
     acking = 0
@@ -47,14 +47,16 @@ async def main(server, update_time, requesting):
             await asyncio.sleep(update_time)
 
 
+def main(server, update_time, requesting):
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(start(server, update_time, requesting))
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Create CoAP client')
     parser.add_argument('server')
     parser.add_argument('-u', '--update_time', type=int, default=10)
     parser.add_argument('-r', '--requesting', type=int, default=10)
-
     args = parser.parse_args()
 
-    asyncio.get_event_loop().run_until_complete(main(args.server,
-                                                     args.update_time,
-                                                     args.requesting))
+    main(args.server, args.update_time, args.requesting)

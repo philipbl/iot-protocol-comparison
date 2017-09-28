@@ -17,15 +17,20 @@ def on_message(client, userdata, message):
     print("Received message ({})".format(total))
 
 
+def main(broker):
+   client = mqtt.Client()
+   client.on_connect = on_connect
+   client.on_message = on_message
+   client.connect(broker)
+
+   client.loop_forever()
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Create MQTT subscriber')
     parser.add_argument('broker')
-
     args = parser.parse_args()
 
-    client = mqtt.Client()
-    client.on_connect = on_connect
-    client.on_message = on_message
-    client.connect(args.broker)
+    main(args.broker)
 
-    client.loop_forever()
+

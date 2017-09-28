@@ -18,24 +18,18 @@ def start_sensors(queue, data_file, interval):
         time.sleep(interval)
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Create MQTT publisher')
-    parser.add_argument('broker')
-    parser.add_argument('data_file')
-    parser.add_argument('-i', '--interval', type=int, default=2)
-    args = parser.parse_args()
-
+def main(broker, data_file, interval):
     print("Loading queue...")
     queue = PersistentQueue('mqtt.queue')
 
     print("Starting producer")
     producer = Thread(target=start_sensors,
-                      args=(queue, args.data_file, args.interval))
+                      args=(queue, data_file, interval))
     producer.start()
 
     print("Starting MQTT publisher...")
     client = mqtt.Client()
-    client.connect(args.broker)
+    client.connect(broker)
     client.loop_start()
 
     while True:
@@ -50,3 +44,14 @@ if __name__ == "__main__":
         info.wait_for_publish()
         queue.delete()
         queue.flush()
+
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Create MQTT publisher')
+    parser.add_argument('broker')
+    parser.add_argument('data_file')
+    parser.add_argument('-i', '--interval', type=int, default=2)
+    args = parser.parse_args()
+
+    main(args.broker, args.data_file, args.interval)
