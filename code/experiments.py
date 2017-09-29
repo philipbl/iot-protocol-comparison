@@ -23,7 +23,7 @@ def experiment_1_setup(protocol, device_type, data_file):
             pass
 
 
-def experiment_2_setup(protocol, device_type, data_file, queue_size=100):
+def experiment_2_setup(protocol, device_type, data_file, queue_size=300):
     """ Run with a built up queue """
 
     if device_type == 'sensor':
